@@ -8,7 +8,7 @@ package Behavioral.Command;
 public class Main {
 
     public static void main(String[] args) {
-        Lamp device = new Lamp();
+        DeviceInterface device = new Lamp();
 
         try {
             device.setCommand("on", new TurnOnCommand());
