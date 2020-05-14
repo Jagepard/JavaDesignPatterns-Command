@@ -14,10 +14,11 @@ public class Main {
             device.setCommand("on", new TurnOnCommand());
             device.setCommand("off", new TurnOffCommand());
             device.setCommand("toggle", new ToggleCommand());
-            device.execute("on");
-            device.execute("off");
-            device.execute("toggle");
-            device.execute("toggle");
+
+            System.out.println(device.execute("on"));
+            System.out.println(device.execute("off"));
+            System.out.println(device.execute("toggle"));
+            System.out.println(device.execute("toggle"));
         } catch (Exception e) {
             System.out.printf("Caught exception: %s \n", e.getLocalizedMessage());
         }
