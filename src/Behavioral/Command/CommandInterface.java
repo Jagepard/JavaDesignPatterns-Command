@@ -6,5 +6,5 @@
 package Behavioral.Command;
 
 public interface CommandInterface {
-    void execute();
+    String execute();
 }

@@ -6,7 +6,7 @@
 package Behavioral.Command;
 
 public class TurnOnCommand implements CommandInterface {
-    public void execute() {
-        System.out.print("The Light turns on \n");
+    public String execute() {
+        return "The Light turns on";
     }
 }

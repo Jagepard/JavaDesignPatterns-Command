@@ -8,9 +8,9 @@ package Behavioral.Command;
 public class ToggleCommand implements CommandInterface{
     int toggle = 1;
 
-    public void execute() {
+    public String execute() {
         CommandInterface command = ((toggle % 2) == 1) ? new TurnOnCommand() : new TurnOffCommand();
         toggle++;
-        command.execute();
+        return command.execute();
     }
 }

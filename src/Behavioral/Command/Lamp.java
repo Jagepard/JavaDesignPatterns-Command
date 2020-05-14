@@ -11,12 +11,12 @@ public class Lamp implements DeviceInterface{
 
     LinkedHashMap<String, CommandInterface> commands = new LinkedHashMap<>();
 
-    public void execute(String commandName) {
+    public String execute(String commandName) {
         if (!commands.containsKey(commandName)) {
             throw new IllegalArgumentException("Command does not exist in the registry");
         }
 
-        commands.get(commandName).execute();
+        return commands.get(commandName).execute();
     }
 
     public void setCommand(String commandName, CommandInterface command) {
