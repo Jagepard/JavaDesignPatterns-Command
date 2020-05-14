@@ -6,6 +6,6 @@
 package Behavioral.Command;
 
 public interface DeviceInterface {
-    void execute(String commandName);
+    String execute(String commandName);
     void setCommand(String commandName, CommandInterface command);
 }
